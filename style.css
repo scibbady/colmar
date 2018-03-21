@@ -1,0 +1,179 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 24px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 20;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  height: 32px;
+  align-items: center;
+}
+
+.logo span {
+  font-weight: 200;
+}
+
+.navdesk span {
+  padding-left: 16px;
+}
+
+.navmobile {
+  display: none;
+}
+
+main,
+footer {
+  position: relative;
+  top: 64px;
+}
+
+@media only screen and (max-width: 720px) {
+  .logo {
+    display: none;
+  }
+  .navdesk {
+    display: none;
+  }
+  .navmobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  padding: 32px 24px;
+  background-color: gray;
+  box-sizing: border-box;
+}
+
+.banner img {
+  height: auto;
+  width: 100%;
+}
+
+.banner picture {
+  width: 60%;
+  margin-right: 24px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  width: 30%;
+  line-height: 1.2;
+}
+
+.headline h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.headline p {
+  font-size: 1.5rem;
+}
+
+.startbutton {
+  padding: 8px;
+  background-color: seagreen;
+  text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .banner {
+    flex-direction: column;
+    padding: 0;
+  }
+  .banner picture {
+    width: 100%;
+  }
+  .headline h1 {
+    padding-bottom: 32px;
+  }
+  .headline p {
+    padding-bottom: 24px;
+  }
+}
+
+.about {
+  display: flex;
+  width: 100%;
+}
+
+.picquote {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.picquote img {
+  height: auto;
+  width: 100%;
+}
+
+.picquote h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.sidebuttons {
+  display: flex;
+}
+
+.sidebuttons picture {
+  width: 35%%;
+  padding: 16px;
+}
+
+.sideinfo {
+  width: 65%;
+  margin: auto 0;
+}
+
+.sidebuttons img {
+  width: 100%;
+  height: auto;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  margin-top: 32px;
+  padding: 16px 24px;
+  border-top: solid 1px gray;
+  box-sizing: border-box;
+}
+
+footer span {
+  padding-right: 16px;
+}
