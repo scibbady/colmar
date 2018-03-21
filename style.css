@@ -136,14 +136,27 @@ footer {
   padding-bottom: 24px;
 }
 
+.quote {
+  margin-top: auto;
+}
+
 .sidenav {
   display: flex;
   flex-direction: column;
   width: 40%;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  border-left: solid 1px gray;
+
 }
 
 .sidebuttons {
   display: flex;
+  border-bottom: solid 1px gray;
+}
+
+.sidebuttons:first-child {
+  border-top: solid 1px gray;
 }
 
 .sidebuttons picture {
@@ -159,6 +172,11 @@ footer {
 .sidebuttons img {
   width: 100%;
   height: auto;
+}
+
+.sideinfo p,
+.sideinfo h3 {
+  padding-bottom: 8px;
 }
 
 
