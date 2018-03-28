@@ -99,16 +99,28 @@ footer {
 @media only screen and (max-width: 720px) {
   .banner {
     flex-direction: column;
-    padding: 0;
+    padding: 0 16px;
   }
   .banner picture {
     width: 100%;
   }
+  .headline {
+    width: 100%;
+  }
+
   .headline h1 {
+    padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 2rem;
+    font-weight: bolder;
   }
   .headline p {
     padding-bottom: 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .startbutton {
+    margin-bottom: 32px;
   }
 }
 
@@ -179,6 +191,60 @@ footer {
   padding-bottom: 8px;
 }
 
+@media only screen and (max-width: 720px) {
+  .picquote {
+    display: none;
+    width: 0%;
+  }
+  .sidenav {
+    width: 100%;
+  }
+  .sidebuttons {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+  }
+  .sidebuttons:first-child {
+    border: none;
+  }
+  .sideinfo {
+    padding: 16px 64px;
+  }
+}
+
+.startlearning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.startlearning h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}
+
+.courses {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 32px 72px;
+  box-sizing: border-box;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  width: 30%;
+}
+
+.boxes img {
+  height: auto;
+
+}
 
 footer {
   display: flex;
